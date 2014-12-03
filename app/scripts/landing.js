@@ -4,6 +4,7 @@ $(document).ready(function() {
       var subText = $(this).text();
       $(this).text(subText + "!");
    });
+   
     var onHoverAction = function(event) {
      console.log('Hover action triggered.');
      $(this).animate({'margin-top': '10px'});
@@ -15,4 +16,7 @@ $(document).ready(function() {
    };
  
    $('.selling-points .point').hover(onHoverAction, offHoverAction);
+
+   
+
 });
