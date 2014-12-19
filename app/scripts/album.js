@@ -32,26 +32,26 @@
    var currentlyPlayingSong = null;
   
   var createSongRow = function(songNumber, songName, songLength) {
-   var template =
-       '<tr>'
-    + '  <td class="song-number col-md-1">' + songNumber + '</td>'
-    + '  <td class="col-md-9">' + songName + '</td>'
-    + '  <td class="col-md-2">' + songLength + '</td>'
-    + '</tr>'
-     ;
+   var template = '<tr>' +
+    '  <td class="song-number col-md-1" data-song-number="' + songNumber + '">' + songNumber + '</td>' +
+    '  <td class="col-md-9">' + songName + '</td>' +
+    '  <td class="col-md-2">' + songLength + '</td>' +
+    '</tr>';
  
     // Instead of returning the row immediately, we'll attach hover
   // functionality to it first.
    var $row = $(template);
  
    var onHover = function(event) {
+    
      var songNumberCell = $(this).find('.song-number');
      songNumberCell.html('<a class="album-song-button"><i class="fa fa-play"></i></a>');
    };
  
    var offHover = function(event) {
      var songNumberCell = $(this).find('.song-number');
-     songNumberCell.html('');
+     var songNumber = songNumberCell.data('song-number');
+     songNumberCell.html(songNumber);
    };
  
    $row.hover(onHover, offHover);
@@ -78,7 +78,7 @@
        $(this).html('<a class="album-song-button"><i class="fa fa-play"></i></a>');
        currentlyPlayingSong = null;
      }
-   };
+   
    $row.find('.song-number').click(clickHandler);
    $row.hover(onHover, offHover);
    return $row;
