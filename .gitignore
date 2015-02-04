@@ -3,4 +3,5 @@ bower_components
 *.swp
 *.map
 public/javascripts/*
+public/stylesheets/*
 
