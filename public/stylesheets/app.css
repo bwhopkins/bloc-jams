@@ -114,14 +114,15 @@ td.song-number {
   display: inline-block;
   width: 42px;
   height: 42px; }
-  .collection-overlay-button .collection-overlay-button:hover {
+  .collection-overlay-button:hover {
     cursor: pointer;
     color: white;
     background-color: #d2287b; }
   .collection-overlay-button i {
-    line-height: 42px; }
+    line-height: 42px;
+    color: black; }
 
-.collection-album-container .collection-overlay-button .fa-play {
+.collection-album-container .collection-overlay-button .fa {
   padding-left: 5px; }
 
 .player-bar {
