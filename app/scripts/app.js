@@ -128,7 +128,7 @@ var albumPicasso = {
   $scope.SongPlayer = SongPlayer;
  }]);
 
-  blocJams.services('SongPlayer', function() {
+  blocJams.service('SongPlayer', function() {
     return {
       currentSong: null,
       currentAlbum: null,
