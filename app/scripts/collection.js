@@ -19,7 +19,7 @@
    return $(template);
  };
 
- var buildAlbumOverlay = function (albumURL) {
+ var buildAlbumOverlay = function (albumURL, artistName, songLength) {
   var template =
   '<div class="collection-album-image-overlay">'
   + '<div class="collection-overlay-content">'
