@@ -12,18 +12,21 @@
             <a class="collection-overlay-button">
               <i class="fa fa-plus"></i>
             </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="collection-album-info caption">
-        <p>
-          <a ui-serf="album-name" > {{ album.name }} </a>
-          <br/>
-          <a ui-serf="album"> {{ album.artist }} </a>
-          <br/>
-          {{ album.songs.length}} songs
-          <br/>
-        </p>
+             <div class="collection-album-info caption">
+             <p>
+             <a class="album-name" ui-sref="album"> {{ album.name }} </a>
+               <br/>
+               <a ui-sref="album"> {{ album.artist }} </a>
+               <br/>
+               {{ album.songs.length }} songs
+               <br/>
+             </p>
+           </div>
           
       </div>    
     </div>

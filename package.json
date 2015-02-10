@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "brunch watch --server",
-    "postinstall": "./node_modules/bower/bin/bower install",
+    "postinstall": "./node_modules/bower/bin/bower install && ./node_modules/brunch/bin/brunch build",
     "test": "karma start test/karma.conf.js"
   },
   "dependencies": {

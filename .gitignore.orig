@@ -1,0 +1,11 @@
+node_modules
+bower_components
+*.swp
+<<<<<<< HEAD
+*.map
+public/javascripts/*
+public/stylesheets/*
+
+=======
+public
+>>>>>>> song-player-service
